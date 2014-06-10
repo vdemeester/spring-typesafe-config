@@ -7,7 +7,17 @@ group   = 'com.github.vdemeester.spring-typesafe-config'
 version = '0.1.0-SNAPSHOT'
 
 dependencies {
-    compile 'org.springframework:spring-core:4.0.3.RELEASE'
+    // Compile
+    compile     'org.springframework:spring-core:4.0.3.RELEASE'
+    compile     'org.springframework:spring-beans:4.0.3.RELEASE'
+    compile     'org.springframework:spring-context:4.0.3.RELEASE'
+    compile     'com.typesafe:config:1.2.1'
+    // Tests
+    testCompile 'junit:junit:4.11'
+}
+
+repositories {
+    mavenCentral()
 }
 
 task wrapper(type: Wrapper) {
