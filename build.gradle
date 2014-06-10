@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group   = 'com.github.vdemeester.spring-typesafe-config'
+version = '0.1.0-SNAPSHOT'
+
+dependencies {
+    compile 'org.springframework:spring-core:4.0.3.RELEASE'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
