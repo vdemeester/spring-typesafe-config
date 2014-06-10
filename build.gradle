@@ -1,6 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 
+sourceCompatibility = 1.6
+
 group   = 'com.github.vdemeester.spring-typesafe-config'
 version = '0.1.0-SNAPSHOT'
 
